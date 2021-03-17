@@ -1,7 +1,10 @@
-import 'package:ben_demistim/router/router.dart' as rt;
+import 'package:bendemistimm/constant.dart';
+import 'package:bendemistimm/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -9,12 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
-      title: 'ben demiştim',
-      onGenerateRoute: rt.Router.generateRoute,
+      title: 'Ben Demiştim',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: accentColor),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      home: HomePage(),
     );
   }
 }
