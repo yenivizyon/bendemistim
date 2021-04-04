@@ -1,6 +1,8 @@
-import 'package:bendemistimm/constant.dart';
-import 'package:bendemistimm/pages/homepage.dart';
+//import 'package:bendemistimm/pages/homepage.dart';
 import 'package:flutter/material.dart';
+
+import 'constant.dart';
+import 'pages/homepage.dart';
 
 void main() {
   runApp(MyApp());
