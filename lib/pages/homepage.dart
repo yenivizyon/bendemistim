@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
       body: Body(),
       appBar: AppBar(
         backgroundColor: primaryColor,
-        elevation: 1,
+        elevation: 0,
         leading: IconButton(
           icon: Image.asset(
             'assets/icons/menu.png',
